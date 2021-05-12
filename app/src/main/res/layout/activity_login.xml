@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/Tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_signup"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorpink"
+            android:hint="Email"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorpink"
+            android:hint="Password"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bton"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FAC8C6"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="right"
+                android:text="Already have an account?"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:text="  Signup"
+                android:id="@+id/Tv_sign"
+                android:layout_marginTop="4dp"
+                android:textColor="#FAC8C6"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
